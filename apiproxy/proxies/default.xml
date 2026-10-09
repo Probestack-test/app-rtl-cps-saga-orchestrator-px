@@ -9,7 +9,11 @@
 -->
 <ProxyEndpoint name="default">
   <Description>Default proxy endpoint generated from OpenAPI spec</Description>
-
+  <HTTPProxyConnection>
+    <!-- Change this from /v24 to a path unique to saga-orchestrator -->
+    <BasePath>/saga-orchestrator/v24</BasePath>
+    <!-- or /saga/v24, /v25, etc. — anything not owned by another proxy -->
+  </HTTPProxyConnection>
   <!-- ═══ FAULT RULES ═══════════════════════════════════════════════ -->
   <FaultRules>
     <FaultRule name="QuotaExceeded">
