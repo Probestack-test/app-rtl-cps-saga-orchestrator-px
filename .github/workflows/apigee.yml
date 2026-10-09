@@ -1,4 +1,4 @@
-name: Apigee Platform CI
+name: Apigee Platform CI/CD
 
 on:
   workflow_dispatch: 
@@ -9,7 +9,7 @@ on:
 
 jobs:
   apigee-ci:
-    uses: ForgeCrux/pipeline-template/.github/workflows/apigee-v3.yaml@main
+    uses: ForgeCrux/pipeline-template/.github/workflows/apigee.yaml@main
     permissions:
       contents: read
       id-token: write
